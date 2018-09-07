@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title>Demo: CORS in the Browser</title>
+    <style>
+        img {
+            max-width: 480px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CORS in the Browser</h1>
+
+    <h2>Loading without <code>crossorigin</code> hint</h2>
+
+    <img src="https://psazurestoragecors.blob.core.windows.net/cors/img1.jpg">
+
+    <h2>Loading with <code>crossorigin</code> hint</h2>
+
+    <img crossorigin src="https://psazurestoragecors.blob.core.windows.net/cors/img2.jpg">
+
+    <h2><code>fetch</code> image request (CORS)</h2>
+
+    <img id="fetch-img">
+
+    <h2><code>fetch</code> image request (CORS w/Preflight)</h2>
+
+    <img id="fetch-img-preflighted">
+
+    <script>
+
+        //
+        // CORS by default
+        //
+        fetch("https://psazurestoragecors.blob.core.windows.net/cors/img3.jpg").then(async res => {
+            const image = await res.blob();
+            const uri = URL.createObjectURL(image);
+            document.getElementById('fetch-img').src = uri;
+        }, err => {
+            console.log(err);
+        })
+
+        //
+        // Trigger CORS preflight check
+        //
+        fetch("https://psazurestoragecors.blob.core.windows.net/cors/img3.jpg", {
+            headers: {
+                "Content-Type": "image/jpeg"
+            }
+        }).then(async res => {
+            const image = await res.blob();
+            const uri = URL.createObjectURL(image);
+            document.getElementById('fetch-img-preflighted').src = uri;
+        }, err => {
+            console.log(err);
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <title>Demo: CORS in the Browser</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0-rc.2/dist/css/foundation.min.css"
+        integrity="sha256-iJQ8dZac/jUYHxiEnZJsyVpKcdq2sQvdA7t02QFmp30= sha384-SplqNBo/0ZlvSdwrP/riIPDozO5ck8+yIm++KVqyMAC53S6m3BaV+2OLpi7ULOOh sha512-ho6hK4sAWdCeqopNZWNy1d9Ok2hzfTLQLcGSr8ZlRzDzh6tNHkVoqSl6wgLsqls3yazwiG9H9dBCtSfPuiLRCQ=="
+        crossorigin="anonymous">
+    <style>
+        img {
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <div class="grid-x">
+            <div class="cell">
+                <h1>Contoso Gallery</h1>
+
+                <h2 class="subheader"><code>fetch</code> image request (CORS
+                    w/Preflight)</h2>
+
+                <img id="fetch-img-preflighted">
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        //
+        // Trigger CORS preflight check
+        //
+        fetch("https://psazurestoragecors.blob.core.windows.net/cors/img3.jpg", {
+            headers: {
+                "Content-Type": "image/jpeg"
+            }
+        }).then(async res => {
+            const image = await res.blob();
+            const uri = URL.createObjectURL(image);
+            document.getElementById('fetch-img-preflighted').src = uri;
+        }, err => {
+            console.log(err);
+        })
+    </script>
+
+</body>
+
+</html>

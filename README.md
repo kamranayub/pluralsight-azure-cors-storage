@@ -1,6 +1,6 @@
 # Microsoft Azure Developer: Configuring CORS Access for Storage Pluralsight Course Materials
 
-These materials are for the Pluralsight course **[Microsoft Azure Developer: Configuring CORS Access for Storage](https://pluralsight.pxf.io/c/1210289/424552/7490?u=https%3A%2F%2Fwww.pluralsight.com%2Fcourses%2Fmicrosoft-azure-storage-cors-access-configuring)**. The license is Apache 2.0. Static site image content is royalty free and available for any use through Pexels, see `blob-container-files/credits.txt`.
+These materials are for the Pluralsight course **[Microsoft Azure Developer: Configuring CORS Access for Storage](http://bit.ly/PSAzureStorageCORS)**. The license is Apache 2.0. Static site image content is royalty free and available for any use through Pexels, see `blob-container-files/credits.txt`.
 
 ## Table of Contents
 

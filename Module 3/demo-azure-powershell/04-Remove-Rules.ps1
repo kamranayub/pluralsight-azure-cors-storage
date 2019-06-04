@@ -1,5 +1,5 @@
 # First, retrieve the storage account
-$StorageAccount = Get-AzureRmStorageAccount `
+$StorageAccount = Get-AzStorageAccount `
     -Name psazurestoragecors `
     -ResourceGroupName psazurestoragecors
 

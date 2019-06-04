@@ -66,20 +66,20 @@ To manage the storage account and other resources we create in the demos, you wi
 
 In Azure PowerShell SDK:
 
-    Set-AzureRmContext -SubscriptionId <Subscription ID>
+    Set-AzContext -SubscriptionId <Subscription ID>
 
 In Azure CLI:
 
     az account set -s <Subscription ID>
 
-### Ensure you have the correct AzureRM and Azure.Storage PowerShell modules installed
+### Ensure you have the correct Az and Azure.Storage PowerShell modules installed
 
 If some commands are failing or you don't see what I'm showing during the course, you may have incorrect modules installed that are overwriting newer ones.
 
 Execute the following commands:
 
 ```powershell
-Get-Module -ListAvailable -Name AzureRM -Refresh
+Get-Module -ListAvailable -Name Az -Refresh
 Get-Module -ListAvailable -Name Azure.Storage -Refresh
 ```
 

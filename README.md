@@ -46,6 +46,9 @@ Please report course issues using the [Issues](https://github.com/kamranayub/plu
 
 ## Updates
 
+- **Jun 2019**
+  - _Enhancement:_ Update content to use `Az` PowerShell module
+
 - **Oct 2018**
   - Initial release 🎉
 
@@ -114,7 +117,7 @@ Replace the values with actual values from your Azure account. Note the quotes (
 - [Working With ARM Templates][armtemplates]
 
 [azuretools]: https://azure.microsoft.com/en-us/tools/
-[psinstall]: https://docs.microsoft.com/en-us/powershell/azure/install-azurerm-ps
+[psinstall]: https://docs.microsoft.com/en-us/powershell/azure/install-az-ps
 [cliinstall]: https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?view=azure-cli-latest
 [armtemplates]: https://bit.ly/azurermtemplates
 [restbrowser]: https://bit.ly/azureapidocs

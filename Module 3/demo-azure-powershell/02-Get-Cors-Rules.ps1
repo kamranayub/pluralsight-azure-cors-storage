@@ -5,7 +5,7 @@ $StorageAccount = Get-AzStorageAccount `
 
 # Then, list CORS rules for Blob service, if any,
 # passing the previous storage context
-$Cors = Get-AzureStorageCORSRule `
+$Cors = Get-AzStorageCORSRule `
     -ServiceType Blob `
     -Context $StorageAccount.Context
 

@@ -1,2 +1,2 @@
 # List Azure Storage related cmdlets
-Get-Help *Azure*Storage*
+Get-Help *Az*Storage*

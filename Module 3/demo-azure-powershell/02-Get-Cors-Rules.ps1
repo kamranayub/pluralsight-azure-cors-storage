@@ -1,11 +1,11 @@
 # First, retrieve the storage account
-$StorageAccount = Get-AzureRmStorageAccount `
+$StorageAccount = Get-AzStorageAccount `
     -Name psazurestoragecors `
     -ResourceGroupName psazurestoragecors
 
 # Then, list CORS rules for Blob service, if any,
 # passing the previous storage context
-$Cors = Get-AzureStorageCORSRule `
+$Cors = Get-AzStorageCORSRule `
     -ServiceType Blob `
     -Context $StorageAccount.Context
 

@@ -1,5 +1,5 @@
 # First, retrieve the storage account
-$StorageAccount = Get-AzureRmStorageAccount `
+$StorageAccount = Get-AzStorageAccount `
     -Name psazurestoragecors `
     -ResourceGroupName psazurestoragecors
 
@@ -40,7 +40,7 @@ $Rules = @(
 # Now, pass rules to cmdlet. In this example
 # we are setting Blob service rules. Ensure
 # we pass the StorageContext as well.
-Set-AzureStorageCORSRule `
+Set-AzStorageCORSRule `
     -ServiceType Blob `
     -Context $StorageAccount.Context `
     -CorsRules $Rules

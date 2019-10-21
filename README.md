@@ -2,6 +2,9 @@
 
 These materials are for the Pluralsight course **[Microsoft Azure Developer: Configuring CORS Access for Storage](http://bit.ly/PSAzureStorageCORS)**. The license is Apache 2.0. Static site image content is royalty free and available for any use through Pexels, see `blob-container-files/credits.txt`.
 
+[![Course overview screenshot](https://user-images.githubusercontent.com/563819/67175981-c3a7c080-f38d-11e9-98df-193fe3bec2be.png)](http://bit.ly/PSAzureStorageCORS)
+
+
 ## Table of Contents
 
 1. [Organization](#organization)

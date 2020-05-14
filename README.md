@@ -50,9 +50,9 @@ Please report course issues using the [Issues](https://github.com/kamranayub/plu
 ## Updates
 
 - **April 2020**
-- _Enhancement:_ Updated Azure ARM clip to cover deploying CORS through ARM templates
-- _Enhancement:_ Updated clips with latest website updates throughout
-- _Fix:_ Removed section on blank CORS values in Portal, as that is allowed now
+  - _Enhancement:_ Updated Azure ARM clip to cover deploying CORS through ARM templates
+  - _Enhancement:_ Updated clips with latest website updates throughout
+  - _Fix:_ Removed section on blank CORS values in Portal, as that is allowed now
 
 - **Jun 2019**
   - _Enhancement:_ Update content to use `Az` PowerShell module
